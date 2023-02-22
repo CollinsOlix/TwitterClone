@@ -17,59 +17,78 @@
                 <ul>
                     <li class="personal-links-text logo">
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="twitter-logo-png-social-media.png" class="link-icons"/>
+                            <img src="assets/twitter-logo-png-social-media.png" class="link-icons"/>
                             <!-- <p style="color: white; font-size: 25px; display: inline; font-weight: 500;">Home</p> -->
                         </p>
                     </li>
 
                     <li class="personal-links-text" >
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="home.png" class="link-icons"/>
-                            <p class="link-texts active-link-text">Home</p>
+                            <img src="assets/home.png" class="link-icons"/>
+                            <div class="tooltip-wrapper">
+
+                                <p class="link-texts active-link-text" style="padding-top: 3px;">Home</p><p class="tooltip">Home</p>
+                            </div>
+                            
                         </p>
                     </li>
                     <li class="personal-links-text">
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="hashtag.png" class="link-icons"/>
-                            <p class="link-texts">Explore</p>
+                            <img src="assets/hashtag.png" class="link-icons"/>
+                            <div class="tooltip-wrapper">
+                                <p class="link-texts">Explore</p><p class="tooltip">Explore</p>
+                            </div>
                         </p>
                     </li>
                     <li class="personal-links-text" >
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="notif-icon-1.PNG" class="link-icons"/>
-                            <p class="link-texts">Notifications</p>
-                        </p>
-                    </li>
-                    
-                    <li class="personal-links-text" >
-                        <p onclick="" class="personal-link-buttons"  >
-                            <img src="messages-icon.PNG" class="link-icons" />
-                            <p class="link-texts ">Messages</p>
-                        </p>
-                    </li>
-                    <li class="personal-links-text" >
-                        <p onclick="" class="personal-link-buttons"  >
-                            <img src="saves-icon.PNG" class="link-icons" />
-                            <p class="link-texts " style="padding-top: 5px;">Bookmarks</p>
+                            <img src="assets/notif-icon-1.PNG" class="link-icons"/>
+                            <div class="tooltip-wrapper">
+                                <p class="link-texts">Notifications<p class="tooltip">Notifications</p></p>
+                            </div>
                         </p>
                     </li>
                     
                     <li class="personal-links-text" >
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="lists-icon.png" class="link-icons"/>
-                            <p class="link-texts ">Lists</p>
+                            <img src="assets/messages-icon.PNG" class="link-icons" />
+                            <div class="tooltip-wrapper">
+                                <p class="link-texts ">Messages</p><p class="tooltip">Messages</p>
+                            </div>
                         </p>
                     </li>
                     <li class="personal-links-text" >
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="profile-icon.PNG" class="link-icons"/>
-                            <p class="link-texts ">Profile</p>
+                            <img src="assets/saves-icon.PNG" class="link-icons" />
+                            <div class="tooltip-wrapper">
+                                <p class="link-texts " style="padding-top: 5px;">Bookmarks</p><p class="tooltip">Bookmarks</p>
+                            </div>
+                        </p>
+                    </li>
+                    
+                    <li class="personal-links-text" >
+                        <p onclick="" class="personal-link-buttons"  >
+                            <img src="assets/lists-icon.png" class="link-icons"/>
+                            <div class="tooltip-wrapper">
+                                <p class="link-texts ">Lists</p><p class="tooltip">Lists</p>
+                            </div>
                         </p>
                     </li>
                     <li class="personal-links-text" >
                         <p onclick="" class="personal-link-buttons"  >
-                            <img src="more.PNG" class="link-icons"/>
-                            <p class="link-texts ">More</p>
+                            <img src="assets/profile-icon.PNG" class="link-icons"/>
+                            <div class="tooltip-wrapper">
+                                <p class="link-texts ">Profile</p><p class="tooltip">Profile</p>
+                            </div>
+                        </p>
+                    </li>
+                    <li class="personal-links-text" >
+                        <p onclick="" class="personal-link-buttons"  >
+                            <img src="assets/more.PNG" class="link-icons"/>
+                            <div class="tooltip-wrapper">
+
+                                <p class="link-texts ">More</p><p class="tooltip">More</p>
+                            </div>
                         </p>
                     </li>
                 </ul>
@@ -77,7 +96,7 @@
             </div>
 
             <div class="user-account">
-                <img src="jake.jpeg" class="profile-picture" />
+                <img src="assets/jake.jpeg" class="profile-picture" />
                 <div class="username">
                     <h3>Collins Olisakwe</h3>
                     <p>@CollinsTOD1</p>
@@ -85,227 +104,362 @@
                 <button>...</button>
             </div>
         </div>
+
         <div class="main-content-container">
+          <div class="main-content-wrapper">
             <div class="home">
                 <p id="home">Home</p>
                 <div class="home-sections">
-                    <p class=" active-page">For You</p>
-                    <p class=" ">Following</p>
+                    <p data-tab-value="#for-you" class="home-tabs active-page" onclick=" ">For You</p>
+                    <p data-tab-value="#following" class="home-tabs " onclick=" ">Following</p>
                 </div>
             </div>
-            <div class="add-post">
+            <div id="for-you"  class="tabs active" data-tab-info>
+                <div class="add-post">
                 <div class="add-post-inner">
-                    <img class="profile-picture whats-happening-img" src="jake.jpeg"/>
+                    <img class="profile-picture whats-happening-img" src="assets/jake.jpeg"/>
                     <div class="add-post-container">
-                        <input type="text" name="whats-happening" id="whats-happening" placeholder="What's happening?">
+                        <textarea name="whats-happening" class="text-entry" placeholder="What's happening?"></textarea>
                         <div class="add-alt">
                             <ul>
-                                <li><img src="img-icon.PNG" class="add-alt-imgs"/></li>
-                                <li><img src="gif-icon.PNG" class="add-alt-imgs"/></li>
-                                <li><img src="poll-icon.PNG" class="add-alt-imgs"/></li>
-                                <li><img src="emoji-icon.PNG" class="add-alt-imgs"/></li>
-                                <li><img src="schedule-icon.PNG" class="add-alt-imgs"/></li>
-                                <li><img src="location-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/img-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/gif-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/poll-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/emoji-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/schedule-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/location-icon.PNG" class="add-alt-imgs"/></li>
                             </ul>
-                            <p id="ul-tweet">Tweet</p>
+                            <p id="ul-tweet" onclick="createNewPost()">Tweet</p>
                         </div>
                     </div>
+                </div>
                 </div>
                 <p class="tweet-count" onclick="">Show 385 tweets</p>
+                <div class="posts">
+                    <div class="post-container">
+    
+                        <img src="assets/twitter-logo-png-social-media.png" style="background-color: green" class= "profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username <p> . </p><p id="post-time">5h</p></p>
+                                    </div>
+                                    <button class="post-profile-interaction">...</button>
+                                </div>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eius. Optio quam quia veritatis ipsum, id ratione dignissimos, blanditiis hic explicabo officia ullam? Distinctio quo ab rem vel atque a.</p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg"  class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username <p> . </p><p id="post-time">35m</p></p>
+                                    </div>
+                                    <button class="post-profile-interaction">...</button>
+                                </div>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eius. Optio quam quia veritatis ipsum, id ratione dignissimos, blanditiis hic explicabo officia ullam? Distinctio quo ab rem vel atque a.</p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg" class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username</p>
+                                    </div>
+                                    <button class="post-profile-interaction">...</button>
+                                </div>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam, voluptatibus libero omnis, fugit laudantium rem est non ipsa atque, aperiam modi. Rem, esse. Neque fuga cum magni eligendi natus, omnis ipsa accusantium repellendus necessitatibus debitis ducimus adipisci voluptas, repudiandae culpa officia aliquam eaque dignissimos sapiente. Ducimus, debitis nisi iusto necessitatibus, fugit tempore animi, ullam magnam sunt enim quod. Modi ducimus eveniet temporibus quasi aliquid perspiciatis necessitatibus rerum suscipit hic corrupti nobis ipsum optio nesciunt illum officia vel, illo adipisci odio impedit repellat. Fugit commodi consequatur iste non rerum porro pariatur necessitatibus cum, error voluptas eveniet quam cumque, ex dolore?</p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg" class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username</p>
+                                    </div>
+                                    <button class="post-profile-interaction">...</button>
+                                </div>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam, voluptatibus libero omnis, fugit laudantium rem est non ipsa atque, aperiam modi. Rem, esse. Neque fuga cum magni eligendi natus, omnis ipsa accusantium repellendus necessitatibus debitis ducimus adipisci voluptas, repudiandae culpa officia aliquam eaque dignissimos sapiente. Ducimus, debitis nisi iusto necessitatibus, fugit tempore animi, ullam magnam sunt enim quod. Modi ducimus eveniet temporibus quasi aliquid perspiciatis necessitatibus rerum suscipit hic corrupti nobis ipsum optio nesciunt illum officia vel, illo adipisci odio impedit repellat. Fugit commodi consequatur iste non rerum porro pariatur necessitatibus cum, error voluptas eveniet quam cumque, ex dolore?</p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg" class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username</p>
+                                    </div>
+                                    <button class="post-profile-interaction">...</button>
+                                </div>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content"><img src="assets/test-img.jpg" class="tweet-imgs" /></p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                </div>
             </div>
-            <div class="posts">
-                <div class="post-container">
 
-                    <img src="twitter-logo-png-social-media.png" style="background-color: green" class= "profile-picture post-profile-picture" />
-                    <div class="post">
-                        <div class="post-info">
-                            <p id="repost-info">Some text about the reposted tweet</p>
-                            <div class="username">
-                                <div>
-                                    <h3 id="post-handle">Username Goes Here</h3>
-                                    <p>@Username <p> . </p><p id="post-time">5h</p></p>
-                                </div>
-                                <button>...</button>
-                            </div>
-                            <div style="max-width: 90%; text-align: justify;">
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eius. Optio quam quia veritatis ipsum, id ratione dignissimos, blanditiis hic explicabo officia ullam? Distinctio quo ab rem vel atque a.</p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="impressions">
+            <div id="following" class="tabs " data-tab-info>
+                <div class="add-post">
+                <div class="add-post-inner">
+                    <img class="profile-picture whats-happening-img" src="assets/jake.jpeg"/>
+                    <div class="add-post-container">
+                        <textarea name="whats-happening" class="text-entry" placeholder="What's happening?"></textarea>
+                        <div class="add-alt">
                             <ul>
-                                <li><img src="comments-icon.PNG" class="add-alt-imgs"/>1,234</li>
-                                <li><img src="retweet-icon.PNG" class="add-alt-imgs"/>123</li>
-                                <li><img src="like-icon.PNG" class="add-alt-imgs"/>345.8K</li>
-                                <li><img src="interact-icon.PNG" class="add-alt-imgs"/>500K</li>
-                                <li><img src="share-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/img-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/gif-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/poll-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/emoji-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/schedule-icon.PNG" class="add-alt-imgs"/></li>
+                                <li><img src="assets/location-icon.PNG" class="add-alt-imgs"/></li>
                             </ul>
+                            <p id="ul-tweet" onclick="showPost()">Tweet</p>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="post-container">
-
-                    <img src="jake.jpeg"  class="profile-picture post-profile-picture" />
-                    <div class="post">
-                        <div class="post-info">
-                            <p id="repost-info">Some text about the reposted tweet</p>
-                            <div class="username">
-                                <div>
-                                    <h3 id="post-handle">Username Goes Here</h3>
-                                    <p>@Username <p> . </p><p id="post-time">35m</p></p>
+                </div>
+                <p class="tweet-count" onclick="">Show 385 tweets</p>
+                <div class="posts">
+                                         
+                     
+                     
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg" class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username</p>
+                                    </div>
+                                    <button>...</button>
                                 </div>
-                                <button>...</button>
-                            </div>
-                            <div style="max-width: 90%; text-align: justify;">
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eius. Optio quam quia veritatis ipsum, id ratione dignissimos, blanditiis hic explicabo officia ullam? Distinctio quo ab rem vel atque a.</p>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content"><img src="assets/test-img.jpg" class="tweet-imgs" /></p>
+                                </div>
+                                
                             </div>
                             
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
                         </div>
                         
-                        <div class="impressions">
-                            <ul>
-                                <li><img src="comments-icon.PNG" class="add-alt-imgs"/>1,234</li>
-                                <li><img src="retweet-icon.PNG" class="add-alt-imgs"/>123</li>
-                                <li><img src="like-icon.PNG" class="add-alt-imgs"/>345.8K</li>
-                                <li><img src="interact-icon.PNG" class="add-alt-imgs"/>500K</li>
-                                <li><img src="share-icon.PNG" class="add-alt-imgs"/></li>
-                            </ul>
-                        </div>
                     </div>
-                    
-                </div>
-                <div class="post-container">
-
-                    <img src="jake.jpeg" class="profile-picture post-profile-picture" />
-                    <div class="post">
-                        <div class="post-info">
-                            <p id="repost-info">Some text about the reposted tweet</p>
-                            <div class="username">
-                                <div>
-                                    <h3 id="post-handle">Username Goes Here</h3>
-                                    <p>@Username</p>
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg" class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username</p>
+                                    </div>
+                                    <button>...</button>
                                 </div>
-                                <button>...</button>
-                            </div>
-                            <div style="max-width: 90%; text-align: justify;">
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam, voluptatibus libero omnis, fugit laudantium rem est non ipsa atque, aperiam modi. Rem, esse. Neque fuga cum magni eligendi natus, omnis ipsa accusantium repellendus necessitatibus debitis ducimus adipisci voluptas, repudiandae culpa officia aliquam eaque dignissimos sapiente. Ducimus, debitis nisi iusto necessitatibus, fugit tempore animi, ullam magnam sunt enim quod. Modi ducimus eveniet temporibus quasi aliquid perspiciatis necessitatibus rerum suscipit hic corrupti nobis ipsum optio nesciunt illum officia vel, illo adipisci odio impedit repellat. Fugit commodi consequatur iste non rerum porro pariatur necessitatibus cum, error voluptas eveniet quam cumque, ex dolore?</p>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content"><img src="assets/test-img.jpg" class="tweet-imgs" /></p>
+                                </div>
+                                
                             </div>
                             
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
                         </div>
                         
-                        <div class="impressions">
-                            <ul>
-                                <li><img src="comments-icon.PNG" class="add-alt-imgs"/>1,234</li>
-                                <li><img src="retweet-icon.PNG" class="add-alt-imgs"/>123</li>
-                                <li><img src="like-icon.PNG" class="add-alt-imgs"/>345.8K</li>
-                                <li><img src="interact-icon.PNG" class="add-alt-imgs"/>500K</li>
-                                <li><img src="share-icon.PNG" class="add-alt-imgs"/></li>
-                            </ul>
-                        </div>
                     </div>
-                    
-                </div>
-                <div class="post-container">
-
-                    <img src="jake.jpeg" class="profile-picture post-profile-picture" />
-                    <div class="post">
-                        <div class="post-info">
-                            <p id="repost-info">Some text about the reposted tweet</p>
-                            <div class="username">
-                                <div>
-                                    <h3 id="post-handle">Username Goes Here</h3>
-                                    <p>@Username</p>
+                    <div class="post-container">
+    
+                        <img src="assets/jake.jpeg" class="profile-picture post-profile-picture" />
+                        <div class="post">
+                            <div class="post-info">
+                                <p id="repost-info">Some text about the reposted tweet</p>
+                                <div class="username">
+                                    <div>
+                                        <h3 id="post-handle">Username Goes Here</h3>
+                                        <p>@Username</p>
+                                    </div>
+                                    <button>...</button>
                                 </div>
-                                <button>...</button>
-                            </div>
-                            <div style="max-width: 90%; text-align: justify;">
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam, voluptatibus libero omnis, fugit laudantium rem est non ipsa atque, aperiam modi. Rem, esse. Neque fuga cum magni eligendi natus, omnis ipsa accusantium repellendus necessitatibus debitis ducimus adipisci voluptas, repudiandae culpa officia aliquam eaque dignissimos sapiente. Ducimus, debitis nisi iusto necessitatibus, fugit tempore animi, ullam magnam sunt enim quod. Modi ducimus eveniet temporibus quasi aliquid perspiciatis necessitatibus rerum suscipit hic corrupti nobis ipsum optio nesciunt illum officia vel, illo adipisci odio impedit repellat. Fugit commodi consequatur iste non rerum porro pariatur necessitatibus cum, error voluptas eveniet quam cumque, ex dolore?</p>
+                                <div class="post-content-wrapper">
+                                    <p class="post-content"><img src="assets/test-img.jpg" class="tweet-imgs" /></p>
+                                </div>
+                                
                             </div>
                             
+                            <div class="impressions">
+                                <ul>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/comments-icon.PNG" class="add-alt-imgs comment"/>1,234</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/retweet-icon.PNG" class="add-alt-imgs repost"/>123</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/like-icon.PNG" class="add-alt-imgs like"/>345.8K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/interact-icon.PNG" class="add-alt-imgs comment"/>500K</li>
+                                    <li onclick="addInteract()" class="interactions"><img src="assets/share-icon.PNG" class="add-alt-imgs comment"/></li>
+                                </ul>
+                            </div>
                         </div>
                         
-                        <div class="impressions">
-                            <ul>
-                                <li><img src="comments-icon.PNG" class="add-alt-imgs"/>1,234</li>
-                                <li><img src="retweet-icon.PNG" class="add-alt-imgs"/>123</li>
-                                <li><img src="like-icon.PNG" class="add-alt-imgs"/>345.8K</li>
-                                <li><img src="interact-icon.PNG" class="add-alt-imgs"/>500K</li>
-                                <li><img src="share-icon.PNG" class="add-alt-imgs"/></li>
-                            </ul>
-                        </div>
                     </div>
-                    
+    
                 </div>
-                <div class="post-container">
-
-                    <img src="jake.jpeg" class="profile-picture post-profile-picture" />
-                    <div class="post">
-                        <div class="post-info">
-                            <p id="repost-info">Some text about the reposted tweet</p>
-                            <div class="username">
-                                <div>
-                                    <h3 id="post-handle">Username Goes Here</h3>
-                                    <p>@Username</p>
-                                </div>
-                                <button>...</button>
-                            </div>
-                            <div style="max-width: 90%; text-align: justify;">
-                                <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam, voluptatibus libero omnis, fugit laudantium rem est non ipsa atque, aperiam modi. Rem, esse. Neque fuga cum magni eligendi natus, omnis ipsa accusantium repellendus necessitatibus debitis ducimus adipisci voluptas, repudiandae culpa officia aliquam eaque dignissimos sapiente. Ducimus, debitis nisi iusto necessitatibus, fugit tempore animi, ullam magnam sunt enim quod. Modi ducimus eveniet temporibus quasi aliquid perspiciatis necessitatibus rerum suscipit hic corrupti nobis ipsum optio nesciunt illum officia vel, illo adipisci odio impedit repellat. Fugit commodi consequatur iste non rerum porro pariatur necessitatibus cum, error voluptas eveniet quam cumque, ex dolore?</p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="impressions">
-                            <ul>
-                                <li><img src="comments-icon.PNG" class="add-alt-imgs"/>1,234</li>
-                                <li><img src="retweet-icon.PNG" class="add-alt-imgs"/>123</li>
-                                <li><img src="like-icon.PNG" class="add-alt-imgs"/>345.8K</li>
-                                <li><img src="interact-icon.PNG" class="add-alt-imgs"/>500K</li>
-                                <li><img src="share-icon.PNG" class="add-alt-imgs"/></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-
             </div>
+          </div>
+          
         </div>
         <div class="recommendations">
-            <h2>Trends for you</h2>
-            <ul>
-                <li>
-                    <ul class="recommendation">
-                        <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
-                        <li class="trend-topic"><p>Wizkid</p></li>
-                        <li class="trend-count"><p>300k Tweets</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="recommendation">
-                        <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
-                        <li class="trend-topic"><p>Wizkid</p></li>
-                        <li class="trend-count"><p>300k Tweets</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="recommendation">
-                        <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
-                        <li class="trend-topic"><p>Wizkid</p></li>
-                        <li class="trend-count"><p>300k Tweets</p></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="recommendation">
-                        <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
-                        <li class="trend-topic"><p>Wizkid</p></li>
-                        <li class="trend-count"><p>300k Tweets</p></li>
-                    </ul>
-                </li>
-                
-            </ul>
+                <div class="search-box">
+                    <img src="assets/search-icon.PNG" class="search-ico">
+                    <input type="search" placeholder="Search Twitter">
+                </div>
+                <div class="trends">
+                    <h2>Trends for you</h2>
+                    <ul>
+                        <li>
+                            <ul class="recommendation">
+                                <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
+                                <li class="trend-topic"><p>Wizkid</p></li>
+                                <li class="trend-count"><p>300k Tweets</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="recommendation">
+                                <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
+                                <li class="trend-topic"><p>Wizkid</p></li>
+                                <li class="trend-count"><p>300k Tweets</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="recommendation">
+                                <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
+                            <li class="trend-topic"><p>Wizkid</p></li>
+                            <li class="trend-count"><p>300k Tweets</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="recommendation">
+                            <li class="trend-location"><p>Trending in Nigeria</p><button>...</button></li>
+                            <li class="trend-topic"><p>Wizkid</p></li>
+                            <li class="trend-count"><p>300k Tweets</p></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
         </div>
 </div>
+    <script src="twitter.js"></script>
 </body>
 </html>
